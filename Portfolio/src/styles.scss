@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+   overflow-x: hidden;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.menu-mobile {
+    display: none;
+    transform: translateX(500px);
+    transition: all 225ms ease-in-out;
+}
+
+#checkForMenu:checked ~.menu-mobile{
+    display: block;
+    transform: translateX(0px);
+    transition: all 225ms ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
