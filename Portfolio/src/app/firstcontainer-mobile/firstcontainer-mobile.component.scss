@@ -5,10 +5,11 @@
 
     .profil {
         object-fit: cover;
-        width: 280px;
+        // width: 280px;
+        width: 80%;
         position: absolute;
         z-index: 2;
-        top: 100px;
+        top: 160px;
         left: 0px;
         right: 0px;
         margin-left: auto;
@@ -21,16 +22,30 @@
     width: 100%;
     top: 115px;
     z-index: 2;
+
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .drop {
     width: 100%;
+    // width: 500px;
     position: absolute;
     z-index: 1;
     /* left: 0px; */
-    /* left: 0; */
-    /* right: -27px; */
+    left: 0;
+    right: 0;
     top: 145px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.firstcontainer-mobile-name {
+    position: absolute;
+    color: white;
+    top: 600px;
+    z-index: 2;
 }
