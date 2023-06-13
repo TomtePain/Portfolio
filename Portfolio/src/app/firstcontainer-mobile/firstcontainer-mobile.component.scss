@@ -5,9 +5,9 @@
 
     .profil {
         object-fit: cover;
-        width: 100px;
+        width: 280px;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 100px;
         left: 0px;
         right: 0px;
@@ -18,5 +18,19 @@
 
 .vector {
     position: absolute;
+    width: 100%;
+    top: 115px;
+    z-index: 2;
+}
 
+.drop {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* left: 0px; */
+    /* left: 0; */
+    /* right: -27px; */
+    top: 145px;
+    margin-left: auto;
+    margin-right: auto;
 }
