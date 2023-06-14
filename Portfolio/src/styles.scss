@@ -22,9 +22,12 @@ html {
     display: block;
     transform: translateX(0px);
     transition: all 225ms ease-in-out;
-    position: relative;
+    position: absolute;
     z-index: 3;
+    left: 0;
+    right: 0;
 }
+
 
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

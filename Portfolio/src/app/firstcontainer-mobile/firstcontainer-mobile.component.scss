@@ -9,7 +9,7 @@
         width: 80%;
         position: absolute;
         z-index: 2;
-        top: 160px;
+        top: 90px;
         left: 0px;
         right: 0px;
         margin-left: auto;
@@ -20,7 +20,7 @@
 .vector {
     position: absolute;
     width: 100%;
-    top: 115px;
+    top: 43px;
     z-index: 2;
 
 
@@ -46,6 +46,93 @@
 .firstcontainer-mobile-name {
     position: absolute;
     color: white;
-    top: 600px;
+    top: 500px;
+    left: 0;
+    right: 0;
     z-index: 2;
+    // padding-left: 5%;
+    // padding-right: 5%;
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .iam{
+        transform: rotate(-90deg);
+        width: 72px;
+        height: 33px;
+        font-size: 32px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 45px;
+        margin: 0;
+        line-height: 120%;
+    }
+
+    .name-sec {
+        margin: 0;
+        font-size: 29px;
+        color: #4b47ff;
+        line-height: 120%;
+    }
+}
+
+.first-section-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 615px;
+
+    button {
+        width: 133px;
+        height: 49px;
+        background-color: #00bee8;
+        color: white;
+        border-radius: 10px;
+        border: unset;
+        padding: 15px 30px 15px 30px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.link-icons {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 700px;
+    z-index: 2;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 42px;
+
+    .vectorstyle1 {
+        width: 64px;
+        height: 2px;
+        background-color: blue;
+    }
+}
+
+.second-drop {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    /* left: 97%; */
+    top: 700px;
+    /* background: #4b47ff; */
+    /* filter: blur(46.5px); */
+    /* height: 415px; */
+    /* width: 391px; */
+    // transform: rotate(46deg);
 }
