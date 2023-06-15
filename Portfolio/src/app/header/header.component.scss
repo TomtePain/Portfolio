@@ -6,6 +6,11 @@
     padding-left: 5%;
     padding-right: 5%;
     height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
 
 
     h1 {

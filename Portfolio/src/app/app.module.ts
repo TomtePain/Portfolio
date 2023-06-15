@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
 import { FirstcontainerMobileComponent } from './firstcontainer-mobile/firstcontainer-mobile.component';
 import { AboutMeMobileComponent } from './about-me-mobile/about-me-mobile.component';
+import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutMeMobileComponent } from './about-me-mobile/about-me-mobile.compon
     HeaderComponent,
     MenuMobileComponent,
     FirstcontainerMobileComponent,
-    AboutMeMobileComponent
+    AboutMeMobileComponent,
+    SkillsMobileComponent
   ],
   imports: [
     BrowserModule,
