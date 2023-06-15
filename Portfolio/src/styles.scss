@@ -24,10 +24,12 @@ html {
     display: block;
     transform: translateX(0px);
     transition: all 225ms ease-in-out;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     left: 0;
     right: 0;
+    bottom: 0;
+    top: 100px;
 }
 
 
