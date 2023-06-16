@@ -27,8 +27,46 @@
     text-align: center;
 }
 
+.skill-icons-container {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
 .skill-line-top {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skills-bubble {
+    // position: relative;
+    // top: -100px;
+    // left: -20px;
+    position: absolute;
+    top: 2160px;
+    left: 0px;
+}
+
+.btn-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 158px;
+        height: 49px;
+        background-color: #00bee8;
+        color: white;
+        border-radius: 10px;
+        border: unset;
+        padding: 15px 30px 15px 30px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'poppins';
+        font-size: 16px;
+        line-height: 19.2px;
+    }
 }
