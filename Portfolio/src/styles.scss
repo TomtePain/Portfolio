@@ -2,12 +2,13 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: rgb(20,29,47);
+    background-color: rgb(20, 29, 47);
+    font-family: 'Poppins';
 }
 
 html {
-   overflow-x: hidden;
-   scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .d-none {
@@ -20,7 +21,7 @@ html {
     transition: all 225ms ease-in-out;
 }
 
-#checkForMenu:checked ~.menu-mobile{
+#checkForMenu:checked~.menu-mobile {
     display: block;
     transform: translateX(0px);
     transition: all 225ms ease-in-out;
@@ -34,9 +35,18 @@ html {
 
 
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url('assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('assets/fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.headline {
+    font-size: 45px;
+    line-height: 54px;
+    margin-bottom: 20px;
+    color: white;
+}

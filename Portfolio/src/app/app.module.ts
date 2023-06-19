@@ -8,6 +8,7 @@ import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
 import { FirstcontainerMobileComponent } from './firstcontainer-mobile/firstcontainer-mobile.component';
 import { AboutMeMobileComponent } from './about-me-mobile/about-me-mobile.component';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
+import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
     MenuMobileComponent,
     FirstcontainerMobileComponent,
     AboutMeMobileComponent,
-    SkillsMobileComponent
+    SkillsMobileComponent,
+    PortfolioMobileComponent
   ],
   imports: [
     BrowserModule,
