@@ -9,6 +9,7 @@ import { FirstcontainerMobileComponent } from './firstcontainer-mobile/firstcont
 import { AboutMeMobileComponent } from './about-me-mobile/about-me-mobile.component';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.component';
+import { ContactMobileComponent } from './contact-mobile/contact-mobile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.co
     FirstcontainerMobileComponent,
     AboutMeMobileComponent,
     SkillsMobileComponent,
-    PortfolioMobileComponent
+    PortfolioMobileComponent,
+    ContactMobileComponent
   ],
   imports: [
     BrowserModule,
