@@ -75,4 +75,11 @@
     position: relative;
     top: -80px;
     left: -21px;
+    margin-bottom: -300px;
+}
+
+
+.back-to-top {
+    display: flex;
+    flex-direction: row-reverse;
 }
