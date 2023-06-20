@@ -11,7 +11,8 @@ import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.component';
 import { ContactMobileComponent } from './contact-mobile/contact-mobile.component';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     AboutMeMobileComponent,
     SkillsMobileComponent,
     PortfolioMobileComponent,
-    ContactMobileComponent
+    ContactMobileComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
