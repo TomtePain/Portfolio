@@ -10,6 +10,8 @@ import { AboutMeMobileComponent } from './about-me-mobile/about-me-mobile.compon
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.component';
 import { ContactMobileComponent } from './contact-mobile/contact-mobile.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ContactMobileComponent } from './contact-mobile/contact-mobile.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

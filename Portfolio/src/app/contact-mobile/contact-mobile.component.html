@@ -14,11 +14,11 @@
         Need a Frontend developer? <br><b>Contact me!</b>
     </p>
 
-    <form action="" class="form-container">
-        <input type="text" placeholder="Your name">
-        <input type="email" placeholder="Your email">
-        <input id="msg" type="text" placeholder="Your message">
-        <button>Send message :)</button>
+    <form (submit)="sendMail()" ngNativeValidate class="form-container" #myForm>
+        <input type="text" required placeholder="Your name" name="name" #nameField>
+        <input type="email" required placeholder="Your email" name="mail" #mailField>
+        <input id="msg" type="text" required placeholder="Your message" name="message" #messageField>
+        <button #sendButton>Send message :)</button>
     </form>
 
     <img class="bottomdrop" src="assets/contact-section/bottomdrop.png" alt="">

@@ -65,12 +65,13 @@
 }
 
 .portfolio-drop {
-    // position: absolute;
-    // top: 3230px;
-    // z-index: -1;
-
-    position: relative;
-    bottom: 800px;
+    position: absolute;
+    top: 3230px;
+    right: 0;
     z-index: -1;
-    margin-bottom: -500px;
+
+    // position: relative;
+    // bottom: 800px;
+    // z-index: -1;
+    // margin-bottom: -500px;
 }
