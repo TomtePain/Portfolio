@@ -87,5 +87,7 @@
 .back-to-top {
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
     z-index: 2;
+    margin-top: 35px;
 }
