@@ -57,6 +57,10 @@
     font-size: 18px;
     line-height: 27.6px;
     border-radius: 10px;
+
+    &:hover {
+        background-color: rgba(0, 190, 232, 1);
+    }
 }
 
 .github {

@@ -33,30 +33,32 @@
     display: flex;
     flex-direction: column;
     margin-top: 45px;
+    margin-bottom: 75px;
 
-    input {
+    input, textarea {
         margin-bottom: 35px;
         background-color: transparent;
         border: 1px solid rgba(75, 71, 255, 1);
         border-radius: 10px;
         padding: 15px 25px 15px 25px;
+        outline: none;
+        color: white;
 
         &::placeholder {
             color: white;
             font-family: 'poppins';
             font-size: 16px;
-        }
-        
+        }        
+    }
+
+    input:focus, textarea:focus {
+        border: 1px solid rgba(0, 190, 232, 1);
     }
 
     #msg {
         height: 160px;
-
-        &::placeholder {
-            position: absolute;
-            top: 15px;
-        }
-        
+        font-family: 'poppins'; 
+        resize: none;       
     }
 
     button {
@@ -69,6 +71,14 @@
         width: 195px;
         align-self: center;
         z-index: 2;
+        cursor: pointer;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            scale: 1.1;
+            transition: all 225ms ease-in-out;
+            background-color: #4b47ff;
+        }
     }
 }
 
@@ -85,9 +95,11 @@
 
 
 .back-to-top {
-    display: flex;
-    flex-direction: row-reverse;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    margin-top: 35px;
+    right: 5%;
+}
+
+.filled {
+    border: 1px solid rgba(112, 230, 28, 1) !important;
 }
