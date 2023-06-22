@@ -20,7 +20,15 @@
             top: 8px;
             right: -20px;
         }
+
+        @media (min-width: 900px) {
+            h2 {
+                font-size: 90px;
+            }
+        }
     }
+
+
 }
 
 .text {
@@ -42,9 +50,6 @@
 }
 
 .skills-bubble {
-    // position: relative;
-    // top: -100px;
-    // left: -20px;
     position: absolute;
     top: 2160px;
     left: 0px;
