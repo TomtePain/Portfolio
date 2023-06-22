@@ -17,5 +17,30 @@
         color: white;
         text-decoration: none;
     }
+
+    div {
+        display: none;
+    }
+
+    @media (min-width: 800px) {
+        label {
+            display: none;
+        }
+
+        div {
+            display: block;
+        }
+
+        div a {
+            margin-left: 25px;
+            font-size: 23px;
+
+            &:hover {
+                color: rgba(0, 190, 232, 1);
+                text-decoration: underline;
+                text-decoration-color: rgba(75, 71, 255, 1);
+            }
+        }
+    }
 }
 
