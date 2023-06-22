@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-
+    
+    
     padding-left: 5%;
     padding-right: 5%;
     color: white;
@@ -19,6 +20,11 @@
     .name {
         font-size: 40px;
         margin-bottom: 27px;
+
+        a {
+            font-size: 40px;
+            margin-bottom: 27px;
+        }
     }
 
     p {

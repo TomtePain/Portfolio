@@ -51,3 +51,16 @@ html {
     margin-bottom: 20px;
     color: white;
 }
+
+.bottom-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 400px;
+
+    @media (max-width: 800px) and (max-height: 915px ) {
+        bottom: unset;
+    }
+}
