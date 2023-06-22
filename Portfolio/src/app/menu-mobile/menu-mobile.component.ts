@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MenuMobileComponent {
 
+  removeCheck() {
+    let checkbox:any = document.getElementById('checkForMenu');
+    checkbox.checked = false;
+  }
 }
