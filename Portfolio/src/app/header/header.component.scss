@@ -12,6 +12,11 @@
     top: 0;
     z-index: 4;
 
+    .logo {
+        height: 80px;
+        cursor: pointer;
+    }
+
 
     a {
         color: white;
@@ -49,8 +54,8 @@
     }
 
     @media (min-width: 1400px) {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 10%;  //15%
+        padding-right: 10%; //15%
     }
 }
 

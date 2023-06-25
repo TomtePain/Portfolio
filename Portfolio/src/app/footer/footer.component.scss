@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    
+    left: 0;
     
     padding-left: 5%;
     padding-right: 5%;
@@ -17,14 +17,9 @@
     border-top: 4px solid rgba(0, 190, 232, 1);
     margin-top: 30px;
 
-    .name {
-        font-size: 40px;
-        margin-bottom: 27px;
-
-        a {
-            font-size: 40px;
-            margin-bottom: 27px;
-        }
+    .logo {
+        height: 80px;
+        cursor: pointer;
     }
 
     p {
@@ -45,3 +40,4 @@
     align-items: center;
     gap: 42px;
 }
+
