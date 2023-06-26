@@ -5,6 +5,15 @@
     margin-top: 100px
 }
 
+.pseudo {
+    position: relative;
+    top: -120px;
+}
+
+.headline-container-desktop {
+    display: none;
+}
+
 .headline {
     margin: 0;
     margin-left: 10px;
@@ -17,6 +26,10 @@
     padding-bottom: 50px;
     color: white;
     font-family: 'poppins';
+}
+
+.project-desktop-left, .project-desktop-right {
+    display: unset;
 }
 
 .img-pos {
@@ -46,9 +59,11 @@
     gap: 10px;
     height: 58px;
     margin-bottom: 90px;
+    text-align: center;
 }
 
-.live-test, .github {
+.live-test,
+.github {
     background-color: rgba(75, 71, 255, 1);
     text-decoration: none;
     color: white;
@@ -73,9 +88,95 @@
     top: 3230px;
     right: 0;
     z-index: -1;
+}
 
-    // position: relative;
-    // bottom: 800px;
-    // z-index: -1;
-    // margin-bottom: -500px;
+@media (min-width: 900px) {
+    .headline-container {
+        display: none;
+    }
+
+    .text-center {
+        margin-bottom: 75px;
+    }
+
+    .pseudo {
+        top: -300px;
+    }
+
+    .headline-container-desktop {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        margin-top: -90px;
+
+
+        h2 {
+            font-size: 90px;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+    }
+
+    .line-desktop-right {
+        height: 4px;
+        width: 260px;
+    }
+
+    .project-desktop-left, .project-desktop-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .img-pos {
+            width: 55%;
+        }
+        .text-center {
+            width: 45%;
+            text-align: start;
+            margin-bottom: 0;
+            
+
+            .buttons {
+                margin-bottom: 0;
+                justify-content: flex-start;
+                gap: 35px;
+            }
+        }
+    }
+
+    .project-desktop-right {
+        flex-direction: row-reverse;
+
+        .text-center {
+            text-align: end;
+            
+
+            .buttons {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .line-desktop-right {
+        height: 4px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .line-desktop-right {
+        height: 4px;
+        width: 450px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .line-desktop-right {
+        height: 4px;
+        width: 720px;
+    }
 }
