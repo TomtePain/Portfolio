@@ -6,21 +6,27 @@
         <h2 class="headline">Contact</h2>
     </div>
 
-    <h3>Got a problem to solve?</h3>
+    <div class="contact-section-desktop">
+        <div class="contact-section-desktop-left"> 
+            <h3>Got a problem to solve?</h3>
 
-    <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
-        projects with my work. <br>
-        <br>
-        Need a Frontend developer? <br><b>Contact me!</b>
-    </p>
+            <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
+                projects with my work. <br>
+                <br>
+                Need a Frontend developer? <b>Contact me!</b>
+            </p>
+        </div>
 
-    <form (submit)="sendMail()" ngNativeValidate class="form-container" #myForm> 
-        <input id="nameField" type="text" required placeholder="Your name" name="name" #nameField [class.filled]="nameFilled" (change)="checkFields()">
-        <input id="mailField" type="email" required placeholder="Your email" name="mail" #mailField [class.filled]="mailFilled" (change)="checkFields()">
-        <textarea id="msg" type="text" required placeholder="Your message" name="message" #messageField [class.filled]="messageFilled" (change)="checkFields()"></textarea>
-        <button #sendButton>Send message :)</button>
-    </form>
-
+        <form (submit)="sendMail()" ngNativeValidate class="form-container" #myForm>
+            <input id="nameField" type="text" required placeholder="Your name" name="name" #nameField
+                [class.filled]="nameFilled" (change)="checkFields()">
+            <input id="mailField" type="email" required placeholder="Your email" name="mail" #mailField
+                [class.filled]="mailFilled" (change)="checkFields()">
+            <textarea id="msg" type="text" required placeholder="Your message" name="message" #messageField
+                [class.filled]="messageFilled" (change)="checkFields()"></textarea>
+            <button #sendButton>Send message :)</button>
+        </form>
+    </div>
 
     <img class="bottomdrop" src="assets/contact-section/bottomdrop.png" alt="">
 

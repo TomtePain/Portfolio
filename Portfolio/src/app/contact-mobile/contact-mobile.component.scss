@@ -36,7 +36,8 @@
     margin-top: 45px;
     margin-bottom: 75px;
 
-    input, textarea {
+    input,
+    textarea {
         margin-bottom: 35px;
         background-color: transparent;
         border: 1px solid rgba(75, 71, 255, 1);
@@ -49,17 +50,18 @@
             color: white;
             font-family: 'poppins';
             font-size: 16px;
-        }        
+        }
     }
 
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
         border: 1px solid rgba(0, 190, 232, 1);
     }
 
     #msg {
         height: 160px;
-        font-family: 'poppins'; 
-        resize: none;       
+        font-family: 'poppins';
+        resize: none;
     }
 
     button {
@@ -84,11 +86,6 @@
 }
 
 .bottomdrop {
-    // position: relative;
-    // top: -80px;
-    // left: -21px;
-    // margin-bottom: -300px;
-
     position: absolute;
     left: 0;
     margin-top: -100px;
@@ -103,4 +100,57 @@
 
 .filled {
     border: 1px solid rgba(112, 230, 28, 1) !important;
+}
+
+@media (min-width: 900px) {
+    .headline-container {
+        margin-bottom: 120px;
+
+        img {
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 5px;
+        }
+
+        .headline {
+            font-size: 90px;
+        }
+    }
+
+    .contact-section-desktop {
+        display: flex;
+
+        .contact-section-desktop-left {
+            width: 45%;
+            margin-right: 5%;
+
+            h3 {
+                font-size: 32px;
+                line-height: 38.4px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .form-container {
+        width: 45%;
+        margin-left: 5%;
+        margin-top: 0;
+
+        button {
+            font-size: 23px;
+            line-height: 27.6px;
+            width: 253px;
+            height: 58px;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .headline-container {
+        img {
+            width: 50px;
+        }
+    }
 }
