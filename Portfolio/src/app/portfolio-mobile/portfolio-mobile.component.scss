@@ -146,7 +146,6 @@
             text-align: start;
             margin-bottom: 0;
             
-
             .buttons {
                 margin-bottom: 0;
                 justify-content: flex-start;
@@ -167,7 +166,6 @@
 
         .text-center {
             text-align: end;
-            
 
             .buttons {
                 justify-content: flex-end;
@@ -188,6 +186,19 @@
         height: 4px;
         width: 450px;
     }
+
+    .project-desktop-left {
+        .img-pos {
+            justify-content: flex-end;
+        }
+    }
+
+    .project-desktop-right {
+        .img-pos {
+            justify-content: flex-start;
+        }
+    }
+    
 }
 
 @media (min-width: 1800px) {

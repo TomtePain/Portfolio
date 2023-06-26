@@ -29,10 +29,8 @@
 
 .drop {
     width: 100%;
-    // width: 500px;
     position: absolute;
     z-index: 1;
-    /* left: 0px; */
     left: 0;
     right: 0;
     top: 145px;
@@ -155,10 +153,6 @@
             line-height: 69.6px;
         }
     }
-
-    // @media (min-width: 1400px) {
-    //     padding-right: 15%;
-    // }
 }
 
 .first-section-btn {
@@ -204,14 +198,9 @@
     }
 
     @media (min-width: 1150px) {
-        // right: 240px;
         padding-right: 10%;
         top: 470px;
     }
-
-    // @media (min-width: 1400px) {
-    //     padding-right: 15%;
-    // }
 
     @media (min-width: 1600px) {
         padding-right: 5%;
@@ -260,8 +249,12 @@
             display: unset;
         }
     }
+}
 
-
+@media (max-width: 400px) {
+    .link-icons {
+        gap: 20px;
+    }
 }
 
 .second-drop {
