@@ -37,6 +37,14 @@
     justify-content: center;
 }
 
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    display: block;
+}
+
 .text-center {
     text-align: center;
 }
@@ -132,6 +140,7 @@
         .img-pos {
             width: 55%;
         }
+        
         .text-center {
             width: 45%;
             text-align: start;
@@ -144,6 +153,13 @@
                 gap: 35px;
             }
         }
+    }
+
+    .img-desktop {
+        display: block;
+    }
+    .img-mobile {
+        display: none;
     }
 
     .project-desktop-right {
