@@ -45,6 +45,10 @@
 
 .single-skill-icon {
     margin-top: 30px;
+
+    img:hover {
+        animation: move 225ms ease-in-out;
+    }
 }
 
 .skill-line-top {
@@ -53,6 +57,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    img:hover {
+        animation: move 225ms ease-in-out;
+    }
 }
 
 .skills-bubble {
@@ -103,7 +111,7 @@
         display: flex;
         flex-direction: row-reverse;
         margin-top: 200px;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
 
         .container-left {
             width: 50%;
@@ -182,6 +190,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+
+            img:hover {
+                animation: move 225ms ease-in-out;
+            }
         }
 
         .pseudo-block {
@@ -205,3 +217,8 @@
         margin-top: 30px;
     }
 }
+
+@keyframes move {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-10px)}
+  }
