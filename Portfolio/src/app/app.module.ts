@@ -13,7 +13,7 @@ import { ContactMobileComponent } from './contact-mobile/contact-mobile.componen
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import { ImprintComponent } from './imprint/imprint.component'
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
