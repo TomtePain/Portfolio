@@ -54,15 +54,14 @@ export class ContactMobileComponent implements OnInit {
     fd.append('mail', mailField.value);
     fd.append('message', messageField.value);
 
-
-    // 
     await fetch('https://tom-pannier.developerakademie.net/send_mail/send_mail.php', {
       method: 'POST',
       body: fd
     })
-
+    this.showPopUp();
     this.enableFields(nameField, mailField, messageField, sendButton);
     this.clearInputs();
+    this.checkFields();
   }
 
   clearInputs() {
@@ -73,7 +72,6 @@ export class ContactMobileComponent implements OnInit {
     nameField.value = '';
     mailField.value = '';
     messageField.value = '';
-
   }
 
   disableFields(nameField: { disabled: boolean; }, mailField: { disabled: boolean; }, messageField: { disabled: boolean; }, sendButton: { disabled: boolean; }) {
@@ -83,15 +81,18 @@ export class ContactMobileComponent implements OnInit {
       sendButton.disabled = true
   }
 
-  enableFields(nameField: { disabled: boolean; }, mailField: { disabled: boolean; }, messageField: { disabled: boolean; }, sendButton: { disabled: boolean; }) {
+  enableFields(nameField:any, mailField:any, messageField:any, sendButton:any) {
     return nameField.disabled = false,
       mailField.disabled = false,
       messageField.disabled = false,
-      sendButton.disabled = false
+      sendButton.disabled = false;
   }
 
-
-
-
-
+  showPopUp() {
+    let popUp:any = document.getElementById('popup');
+    popUp.classList.remove('d-none');
+    setTimeout(() => {
+      popUp.classList.add('d-none');
+    }, 3500);
+  }
 }

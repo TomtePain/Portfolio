@@ -23,6 +23,29 @@
     margin: 0;
 }
 
+#popup {
+    display: flex;
+    justify-content: center;
+}
+
+.popup {
+    width: 225px;
+    height: 24px;
+    background-color: rgba(112, 230, 28, 1);
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 3;
+    animation: popUp 1s ease-in;
+    transform: translateY(-200px);
+}
+
 .greenshadow {
     position: absolute;
     right: 0;
@@ -155,5 +178,16 @@
         img {
             width: 50px;
         }
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-200px);
+        opacity: 1;
     }
 }

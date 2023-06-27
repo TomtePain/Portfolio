@@ -25,14 +25,11 @@
             <textarea id="msg" type="text" required placeholder="Your message" name="message" #messageField
                 [class.filled]="messageFilled" (change)="checkFields()"></textarea>
             <button #sendButton>Send message :)</button>
+            <div class="d-none" id="popup"><div class="popup">Email has been send! :) <img src="assets/contact-section/ok.ico" alt=""></div></div>
         </form>
     </div>
 
     <img class="bottomdrop" src="assets/contact-section/bottomdrop.png" alt="">
 
     <a class="back-to-top" href="#" title="Back to top"><img src="assets/contact-section/goupbutton.svg" alt=""></a>
-
-
-
-
 </div>
