@@ -207,3 +207,34 @@
         width: 720px;
     }
 }
+
+.slide-in-left {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 2s ease-in-out;
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

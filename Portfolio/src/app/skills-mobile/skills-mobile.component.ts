@@ -15,7 +15,6 @@ export class SkillsMobileComponent implements OnInit {
 
 
   animation() {
-
     let skills:any = document.querySelector('.skills-desktop');
 
     const observer = new IntersectionObserver(entries => {
