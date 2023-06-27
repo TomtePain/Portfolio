@@ -190,6 +190,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+            
 
             img:hover {
                 animation: move 225ms ease-in-out;
@@ -210,6 +211,7 @@
     .skill-vector-mobile {
         display: none;
     }
+
     .skill-vector-desktop {
         display: unset;
         position: absolute;
@@ -218,7 +220,26 @@
     }
 }
 
+.icon-lines-desktop-animation {
+    animation: slideIn 1.5s ease-in-out;
+}
+
 @keyframes move {
-    from {transform: translateY(0px);}
-    to {transform: translateY(-10px)}
-  }
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

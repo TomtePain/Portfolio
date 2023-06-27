@@ -9,15 +9,9 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
-
-    // @media (min-width: 1400px) {
-    //     padding-left: 10%;
-    //     padding-right: 10%;
-    // }
 }
 
 html {
-    // overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -62,3 +56,25 @@ html {
     color: white;
 }
 
+
+::-webkit-scrollbar {
+	width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+                                       color-stop(0, rgb(20, 29, 47)),
+                                       color-stop(0.18, rgb(28,58,148)),
+									   color-stop(0.3, rgb(122,153,217)),
+									   color-stop(0.42, rgb(73,125,189)),
+									   color-stop(0.62, rgb(28,58,148)),
+                                       color-stop(0.79, rgb(20, 29, 47)));
+}
