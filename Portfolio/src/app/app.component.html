@@ -1,11 +1,11 @@
 <input type="checkbox" id="checkForMenu" class="d-none">
 <app-header></app-header>
 <app-menu-mobile class="menu-mobile"></app-menu-mobile>
-<app-firstcontainer-mobile [class.d-none]="router.url =='/imprint'"></app-firstcontainer-mobile>
-<app-about-me-mobile [class.d-none]="router.url =='/imprint'"></app-about-me-mobile>
-<app-skills-mobile [class.d-none]="router.url =='/imprint'"></app-skills-mobile>
-<app-portfolio-mobile [class.d-none]="router.url =='/imprint'"></app-portfolio-mobile>
-<app-contact-mobile [class.d-none]="router.url =='/imprint'"></app-contact-mobile>
+<app-firstcontainer-mobile [class.d-none]="router.url =='/imprint' || router.url == '/data-protection'"></app-firstcontainer-mobile>
+<app-about-me-mobile [class.d-none]="router.url =='/imprint' || router.url == '/data-protection'"></app-about-me-mobile>
+<app-skills-mobile [class.d-none]="router.url =='/imprint' || router.url == '/data-protection'"></app-skills-mobile>
+<app-portfolio-mobile [class.d-none]="router.url =='/imprint' || router.url == '/data-protection'"></app-portfolio-mobile>
+<app-contact-mobile [class.d-none]="router.url =='/imprint' || router.url == '/data-protection'"></app-contact-mobile>
 
 <router-outlet></router-outlet>
 <app-footer ></app-footer>

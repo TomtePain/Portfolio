@@ -41,6 +41,11 @@
     gap: 42px;
 }
 
+.data-imprint-container {
+    display: flex;
+    gap: 40px;
+}
+
 @media (min-width: 900px) {
     .footer-container {
         flex-direction: row;
@@ -60,9 +65,12 @@
             }
         }
 
-        .imprint {
+        .data-imprint-container {
+            display: flex;
+            flex-direction: column;
             position: absolute;
-            margin-top: 140px;
+            margin-top: 180px;
+            gap: unset;
         }
     }
 }
